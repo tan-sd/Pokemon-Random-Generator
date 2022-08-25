@@ -1,7 +1,32 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .button {
     display: inline-block;
     border: 1px solid black;
     cursor: pointer;
+    padding: 5px;
+    margin-top: 20px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.pokeName {
+    text-align: center;
+}
+
+.pokeId {
+    text-align: center;
 }
 
 #id {
