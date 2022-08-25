@@ -1,0 +1,14 @@
+.button {
+    display: inline-block;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+#id {
+    display: inline-block;
+}
+
+#pokemonName {
+    display: inline-block;
+    text-transform: capitalize;
+}
