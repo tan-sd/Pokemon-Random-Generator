@@ -3,6 +3,7 @@ body {
     padding: 0;
 }
 
+/* centralise elements */
 .container {
     position: absolute;
     top: 50%;
