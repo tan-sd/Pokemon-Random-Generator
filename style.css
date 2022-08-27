@@ -22,6 +22,11 @@ body {
     transform: translate(-50%);
 }
 
+.button:hover {
+    color: white;
+    background-color: black;
+}
+
 .pokeName {
     text-align: center;
 }
@@ -34,7 +39,12 @@ body {
     display: inline-block;
 }
 
-#pokemonName {
+#pokeName {
     display: inline-block;
     text-transform: capitalize;
+}
+
+.pokeImg {
+    text-align: center;
+    padding-top: 10px;
 }

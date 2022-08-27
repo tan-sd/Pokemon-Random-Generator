@@ -1,4 +1,4 @@
-const pokemonName = document.getElementById('pokemonName');
+const pokemonName = document.getElementById('pokeName');
 const id = document.getElementById('id');
 const button = document.querySelector( '.button');
 
@@ -18,4 +18,5 @@ button.addEventListener("click", (e) => {
       id.innerText = data['id'];
     });
   
+    document.getElementById('pokeImg').src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${randomNumber}.png`
 });
