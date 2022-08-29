@@ -4,6 +4,8 @@ const button = document.querySelector( '.button');
 
 button.addEventListener("click", (e) => {
     e.preventDefault()
+    id.classList.add('no-after')
+    pokemonName.classList.add('no-after')
     pokemonName.innerHTML = '<em>Loading...</em>'
     id.innerHTML = '<em>Loading...</em>'
 
