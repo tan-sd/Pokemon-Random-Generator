@@ -1,3 +1,12 @@
+@font-face {
+    font-family: "gameboy";
+    src: url(./font/early-gameboy.woff);
+}
+
+* {
+    font-family: gameboy;
+}
+
 body {
     margin: 0;
     padding: 0;
