@@ -3,6 +3,12 @@
     src: url(./font/early-gameboy.woff);
 }
 
+@keyframes cursor-blink {
+    0% {
+        opacity: 0;
+    }
+}
+
 * {
     font-family: gameboy;
 }
@@ -44,13 +50,42 @@ body {
     text-align: center;
 }
 
+#pokeName {
+    display: inline-block;
+    text-transform: capitalize;
+}
+
+#pokeName::after {
+    margin: 0;
+    content: '';
+    width: 5px;
+    height: 15px;
+    display: inline-block;
+    background-color: black;
+    animation: cursor-blink 1.5s steps(2) infinite;
+}
+
 #id {
     display: inline-block;
 }
 
-#pokeName {
+
+#id::after {
+    margin: 0;
+    content: '';
+    width: 5px;
+    height: 15px;
     display: inline-block;
-    text-transform: capitalize;
+    background-color: black;
+    animation: cursor-blink 1.5s steps(2) infinite;
+}
+
+#id.no-after:after {
+    display: none;
+}
+
+#pokeName.no-after:after {
+    display: none;
 }
 
 .pokeImg {
