@@ -18,45 +18,34 @@ body {
     padding: 0;
 }
 
-/* centralise elements */
-.container {
-    width: 500px;
-    height: 300px;
-    background: #bdae58;
+.button {
+    border: 0.7vmin solid #5f2f2f;
+    border-radius: 3vmin;
+    cursor: pointer;
     position: absolute;
-    top: 50%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
-    box-shadow: inset 3px 3px rgb(0 0 0 / 15%);
 }
 
-.button {
-    display: inline-block;
-    border: 1px solid black;
-    cursor: pointer;
-    padding: 5px;
-    margin-top: 20px;
-    position: absolute;
-    top: 85%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.button .text {
+    padding: 1vmin;
+    font-size: 2vmin;
 }
 
 .button:hover {
     color: white;
-    background-color: black;
+    background-color: #FF2400;
 }
 
 .pokeName {
-    /* text-align: center; */
     padding: 20px 0 0 20px;
-    font-size: 18px;
+    font-size: 1vmin;
 }
 
 .pokeId {
-    /* text-align: center; */
     padding: 0 0 0 20px;
-    font-size: 18px;
+    font-size: 1vmin;
 }
 
 #pokeName {
@@ -67,8 +56,8 @@ body {
 #pokeName::after {
     margin: 0;
     content: '';
-    width: 5px;
-    height: 15px;
+    width: 0.5vmin;
+    height: 1vmin;
     display: inline-block;
     background-color: black;
     animation: cursor-blink 1.5s steps(2) infinite;
@@ -82,8 +71,8 @@ body {
 #id::after {
     margin: 0;
     content: '';
-    width: 5px;
-    height: 15px;
+    width: 0.5vmin;
+    height: 1vmin;
     display: inline-block;
     background-color: black;
     animation: cursor-blink 1.5s steps(2) infinite;
@@ -99,29 +88,70 @@ body {
 
 .pokeImg {
     text-align: center;
-    padding-top: 50px;
+    padding-top: 2vmin;
 }
 
-.screen {
-    width: 500px;
-    height: 300px;
-    background: #bdae58;
-    position: absolute;
+.screen-main {
+    width: 40vmin;
+    height: 25vmin;
+    background: #dae8c1;
+    position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     box-shadow: inset 3px 3px rgb(0 0 0 / 15%);
+    border: 0.6vmin solid #5f2f2f;
+    overflow: hidden;
 }
 
 .screen-border {
-    width: 700px;
-    height: 450px;
-    background-color: #777;
+    width: 50vmin;
+    height: 32.5vmin;
+    left: 50%;
+    margin-top: 6vmin;
+    transform: translate(-50%);
+    background-color: #906964;
+    position: absolute;
+    border-radius: 13% 5% 15% 5%;
+    border: 0.6vmin solid #5f2f2f;
+    z-index: 2;
+}
+
+.gameboy {
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    height: 80vmin;
+    width: 61vmin;
+    background: #fdc750;
+    border-radius: 1.3vmin;
+    border-bottom-right-radius: 5vmin;
+    overflow: hidden;
+    border: 0.7vmin solid #5f2f2f;
+    box-shadow: 1.8vmin 1.8vmin #9d978e;
+}
+
+.screen-glow {
+    height: 100%;
     position: absolute;
-    border-radius: 13% 5% 15% 5%;
+    background-color: rgba(230, 240, 212, 0.6);
+    transform: skewX(-32deg);
+}
+
+.screen-glow:nth-child(2) {
+    width: 18%;
+    margin-left: 7%;
+}
+
+.screen-glow:nth-child(3) {
+    width: 9%;
+    margin-left: 65%;
+}
+
+.screen-glow:nth-child(4) {
+    width: 12%;
+    margin-left: 80%;
 }
 
 /* TODO:
