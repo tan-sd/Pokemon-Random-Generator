@@ -30,7 +30,7 @@ body {
 
 .button .text {
     padding: 1vmin;
-    font-size: 2vmin;
+    font-size: 1.9vmin;
 }
 
 .button:hover {
@@ -39,12 +39,12 @@ body {
 }
 
 .pokeName {
-    padding: 20px 0 0 20px;
+    padding: 3vmin 0 0 2vmin;
     font-size: 1vmin;
 }
 
 .pokeId {
-    padding: 0 0 0 20px;
+    padding: 0 0 0 2vmin;
     font-size: 1vmin;
 }
 
@@ -89,6 +89,10 @@ body {
 .pokeImg {
     text-align: center;
     padding-top: 2vmin;
+}
+
+#pokeImg {
+    height: 11vmin;
 }
 
 .screen-main {
