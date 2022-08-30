@@ -39,7 +39,7 @@ body {
 }
 
 .pokeName {
-    padding: 3vmin 0 0 2vmin;
+    padding: 3vmin 0 2vmin 2vmin;
     font-size: 1vmin;
 }
 
@@ -92,7 +92,7 @@ body {
 }
 
 #pokeImg {
-    height: 11vmin;
+    height: 13vmin;
 }
 
 .screen-main {
@@ -158,6 +158,9 @@ body {
     margin-left: 80%;
 }
 
+.content {
+    height: 100%;
+}
 /* TODO:
 - Improve on the UI (Pokemon gameboy UI?)
 - Blinking empty text before searching for a pokemon
