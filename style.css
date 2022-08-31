@@ -162,6 +162,26 @@ body {
     height: 100%;
 }
 
+.left-line {
+    height: 0.5vmin;
+    width: 15vmin;
+    background-color: #5f2f2f;
+    margin-top: 1.5vmin;
+    margin-left: 3vmin;
+    position: absolute;
+    box-shadow: 0 0.3vmin #b28985, 0 0.3vmin #b28985;
+}
+
+.right-line {
+    height: 0.5vmin;
+    width: 10vmin;
+    background-color: #5f2f2f;
+    position: absolute;
+    margin-top: 1.5vmin;
+    margin-left: 37vmin;
+    box-shadow: 0 0.3vmin #b28985, 0 0.3vmin #b28985;
+}
+
 /* TODO:
 - Improve on the UI (Pokemon gameboy UI?)
 - Blinking empty text before searching for a pokemon
