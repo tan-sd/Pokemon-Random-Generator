@@ -1,6 +1,6 @@
 @font-face {
     font-family: "gameboy";
-    src: url(./font/early-gameboy.woff);
+    src: url(./assets/font/early-gameboy.woff);
 }
 
 @keyframes cursor-blink {
@@ -181,9 +181,3 @@ body {
     margin-left: 37vmin;
     box-shadow: 0 0.3vmin #b28985, 0 0.3vmin #b28985;
 }
-
-/* TODO:
-- Improve on the UI (Pokemon gameboy UI?)
-- Blinking empty text before searching for a pokemon
-- Font to gameboy text
-*/
